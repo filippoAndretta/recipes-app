@@ -6,7 +6,7 @@
 <body style="margin:0;padding:10px;background:#f5f5f5;font-family:sans-serif">
   <div id="recipes"><p style="text-align:center;color:#999">Rezepte laden...</p></div>
   <script>
-    const API_KEY = "DEIN_RAPIDAPI_KEY_HIER";
+    const API_KEY = "adf66655a7mshd3f3cf2b2cc0d46p105c1ejsn59ac9fe14412";
     const container = document.getElementById("recipes");
 
     async function loadRecipes() {
@@ -22,7 +22,7 @@
         try {
           const res = await fetch("https://the-vegan-recipes-db.p.rapidapi.com/" + id, {
             headers: {
-              "x-rapidapi-key": "adf66655a7mshd3f3cf2b2cc0d46p105c1ejsn59ac9fe14412",
+              "x-rapidapi-key": API_KEY,
               "x-rapidapi-host": "the-vegan-recipes-db.p.rapidapi.com"
             }
           });
@@ -42,4 +42,4 @@
     loadRecipes();
   </script>
 </body>
-</html>adf66655a7mshd3f3cf2b2cc0d46p105c1ejsn59ac9fe14412
+</html>
